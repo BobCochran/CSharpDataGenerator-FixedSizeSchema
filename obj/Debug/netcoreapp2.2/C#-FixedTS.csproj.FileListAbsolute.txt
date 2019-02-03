@@ -1,0 +1,11 @@
+/Users/robwalters/CodeSamples/C#-FixedTS/bin/Debug/netcoreapp2.2/C#-FixedTS.deps.json
+/Users/robwalters/CodeSamples/C#-FixedTS/bin/Debug/netcoreapp2.2/C#-FixedTS.runtimeconfig.json
+/Users/robwalters/CodeSamples/C#-FixedTS/bin/Debug/netcoreapp2.2/C#-FixedTS.runtimeconfig.dev.json
+/Users/robwalters/CodeSamples/C#-FixedTS/bin/Debug/netcoreapp2.2/C#-FixedTS.dll
+/Users/robwalters/CodeSamples/C#-FixedTS/bin/Debug/netcoreapp2.2/C#-FixedTS.pdb
+/Users/robwalters/CodeSamples/C#-FixedTS/obj/Debug/netcoreapp2.2/C#-FixedTS.csprojAssemblyReference.cache
+/Users/robwalters/CodeSamples/C#-FixedTS/obj/Debug/netcoreapp2.2/C#-FixedTS.csproj.CoreCompileInputs.cache
+/Users/robwalters/CodeSamples/C#-FixedTS/obj/Debug/netcoreapp2.2/C#-FixedTS.AssemblyInfoInputs.cache
+/Users/robwalters/CodeSamples/C#-FixedTS/obj/Debug/netcoreapp2.2/C#-FixedTS.AssemblyInfo.cs
+/Users/robwalters/CodeSamples/C#-FixedTS/obj/Debug/netcoreapp2.2/C#-FixedTS.dll
+/Users/robwalters/CodeSamples/C#-FixedTS/obj/Debug/netcoreapp2.2/C#-FixedTS.pdb
