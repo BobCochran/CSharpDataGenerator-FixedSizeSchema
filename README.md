@@ -14,7 +14,9 @@ https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-des
 ## Required Software
 
 MongoDB Database, Community Edition or Enterprise, any currently supported version.  
+
 Microsoft .NET Core SDK, version 2.2.103. 
+
 MongoDB NET Driver, version 2.7.3. 
 
 ## MongoDB Database Server Default Connection
@@ -35,13 +37,17 @@ If you have to create a specific connection string for purposes of authenticatio
 
 To compile (build) the project, open a terminal window, navigate to the project directory, and execute the command 
 
+```
 `dotnet build'
+```
 
 The project should compile without errors. The project as provided in this repository, does in fact compile without errors.
 
 To run the program.cs code, open a terminal window, navigate to the project directory, and execute the command
 
+```
 `dotnet run'
+```
 
 Note: this code, as written, will drop (delete) any collection named 'IoTData' that it finds within the database named 'SizeBasedTS'. If you do not want your collection dropped, edit the program.cs code accordingly.
 
@@ -50,6 +56,7 @@ Note: this code, as written, will drop (delete) any collection named 'IoTData' t
 ### Console Output
 The following messages are printed to the console upon executing 'dotnet run':
 
+```
 Dropping IoTData
 Generating Data for Gateway # 0
 Number of sensors 3
@@ -58,7 +65,7 @@ Generating Data for Gateway # 1
 Number of sensors 3
 Starting Temp value= 33
 All done!
-
+```
 
 ### Database Output
 A database named 'SizeBasedTS'
