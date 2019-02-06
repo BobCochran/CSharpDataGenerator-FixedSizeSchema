@@ -13,9 +13,9 @@ https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-des
 
 ## Required Software
 
-MongoDB Database, Community Edition or Enterprise, any currently supported version.
-Microsoft .NET Core SDK, version 2.2.103.
-MongoDB NET Driver, version 2.7.3.
+MongoDB Database, Community Edition or Enterprise, any currently supported version.  
+Microsoft .NET Core SDK, version 2.2.103. 
+MongoDB NET Driver, version 2.7.3. 
 
 ## MongoDB Database Server Default Connection
 
@@ -66,6 +66,7 @@ A collection named 'IoTData'
 
 ### Sample Document Content
 
+```
 MongoDB Enterprise > db.IoTData.findOne()
 {
 	"_id" : ObjectId("5c5a24848aa0aaf8edc7ded0"),
@@ -85,6 +86,7 @@ MongoDB Enterprise > db.IoTData.findOne()
 			"time" : 1545812460
 		},
 [198 additional entries will appear in the "samples" array".]
+```
 ## References
 
 1. [Robert Walters](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices)
