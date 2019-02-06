@@ -37,7 +37,7 @@ To compile (build) the project, open a terminal window, navigate to the project 
 
 `dotnet build'
 
-The project should compile without errors. Note that the default project, as provided, does in fact compile without errors.
+The project should compile without errors. The project as provided in this repository, does in fact compile without errors.
 
 To run the program.cs code, open a terminal window, navigate to the project directory, and execute the command
 
@@ -46,8 +46,21 @@ To run the program.cs code, open a terminal window, navigate to the project dire
 Note: this code, as written, will drop (delete) any collection named 'IoTData' that it finds within the database named 'SizeBasedTS'. If you do not want your collection dropped, edit the program.cs code accordingly.
 
  
-## Database Output
+## Program Outputs
+### Console Output
+The following messages are printed to the console upon executing 'dotnet run':
 
+Dropping IoTData
+Generating Data for Gateway # 0
+Number of sensors 3
+Starting Temp value= 58
+Generating Data for Gateway # 1
+Number of sensors 3
+Starting Temp value= 33
+All done!
+
+
+### Database Output
 A database named 'SizeBasedTS'
 A collection named 'IoTData'
 
