@@ -64,7 +64,27 @@ All done!
 A database named 'SizeBasedTS'
 A collection named 'IoTData'
 
+### Sample Document Content
 
+MongoDB Enterprise > db.IoTData.findOne()
+{
+	"_id" : ObjectId("5c5a24848aa0aaf8edc7ded0"),
+	"day" : ISODate("2019-02-05T05:00:00Z"),
+	"deviceid" : 0,
+	"sensorid" : 1003,
+	"first" : 1545811460,
+	"last" : 1546010460,
+	"nsamples" : 200,
+	"samples" : [
+		{
+			"val" : 58.03,
+			"time" : 1545811460
+		},
+		{
+			"val" : 58.07,
+			"time" : 1545812460
+		},
+[198 additional entries will appear in the "samples" array".]
 ## References
 
 1. [Robert Walters](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices)
