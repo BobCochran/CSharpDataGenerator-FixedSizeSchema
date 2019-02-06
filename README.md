@@ -2,7 +2,7 @@
 
 ## Description
 
-This project demonstrates creation of fake IoT data and storing that data in a MongoDB database and collection using a fixed-size bucketing schema.
+This project demonstrates storage of data in a MongoDB database and collection using a fixed-size bucketing schema.
 
 Code is written in the C# programming language.
 
