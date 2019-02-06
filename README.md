@@ -49,7 +49,7 @@ To run the program.cs code, open a terminal window, navigate to the project dire
 dotnet run
 ```
 
-Note: this code, as written, will drop (delete) any collection named 'IoTData' that it finds within the database named 'SizeBasedTS'. If you do not want your collection dropped, edit the program.cs code accordingly.
+Note: this code, as written, will drop (delete) any collection named 'IoTData' that it finds within the database named 'SizeBasedTS'. If you do not want your collection dropped, edit the program.cs code accordingly. It is reccommended that this code be tested on a test (not a production) deployment of MongoDB. 
 
  
 ## Program Outputs
@@ -67,7 +67,7 @@ Starting Temp value= 33
 All done!
 ```
 
-Note that the counts for sensors and Starting Temp may vary.
+Counts and values for your particular execution of the code may be different from the counts and values shown above.
 
 ### Database Output
 A database named 'SizeBasedTS'
