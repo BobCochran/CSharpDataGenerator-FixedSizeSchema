@@ -9,7 +9,7 @@ The code in this project configures 2 gateways, each with 3 sensors.
 
 Each document within the mongodb database collection contains up to 200 sensor values.
 
-This showcases a storage technique known as sized-based bucketing which is described in  
+This showcases a storage technique known as sized-based bucketing which is described in 
 [a blog post by Robert Walters.](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices)
 
 ## Required Software
@@ -100,5 +100,5 @@ MongoDB Enterprise > db.IoTData.findOne()
 ```
 ## References
 
-1. [Robert Walters](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices)
+1. [Time Series Data and MongoDB: Part 2 -- Schema Design Best Practices](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices), by Robert Walters.
  
