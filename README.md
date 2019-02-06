@@ -3,13 +3,13 @@ This project demonstrates creation of fake IoT data and storing that data in a M
 
 Code is written in the C# programming language.
 
-This is an example C# application that creates fake IoT data and stores it in MongoDB. Application code is configured to have conceptual "gateways". Each gateway is instrumented with sensors. The app will define an initial value for each gateway. It will then fill out random values for the sensors based on the given gateway's value.
-The default is 2 gateways, 3 sensors each.
+This is an example application that creates fake "Internet of Things" (IoT) data and stores it in a MongoDB database collection. Application code is configured to have conceptual "gateways". Each gateway is instrumented with sensors. The application defines an initial value for each gateway. It will then fill out random values for the sensors based on the given gateway's value. The sensor values could be temperature readings, for example.
+The default is 2 gateways. Each gateway is instrumented with 3 sensors.
 
-Each document within the mongodb collection contains up to 200 sensor values.
+Each document within the mongodb database collection contains up to 200 sensor values.
 
-This storage technique known as sized-based bucketing is described in  
-https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices.
+This showcases a storage technique known as sized-based bucketing which is described in  
+[A blog post by Robert Walters](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices)
 
 ## Required Software
 
