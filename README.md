@@ -38,7 +38,7 @@ If you have to create a specific connection string for purposes of authenticatio
 To compile (build) the project, open a terminal window, navigate to the project directory, and execute the command 
 
 ```
-`dotnet build'
+dotnet build
 ```
 
 The project should compile without errors. The project as provided in this repository, does in fact compile without errors.
@@ -46,7 +46,7 @@ The project should compile without errors. The project as provided in this repos
 To run the program.cs code, open a terminal window, navigate to the project directory, and execute the command
 
 ```
-`dotnet run'
+dotnet run
 ```
 
 Note: this code, as written, will drop (delete) any collection named 'IoTData' that it finds within the database named 'SizeBasedTS'. If you do not want your collection dropped, edit the program.cs code accordingly.
@@ -67,8 +67,11 @@ Starting Temp value= 33
 All done!
 ```
 
+Note that the counts for sensors and Starting Temp may vary.
+
 ### Database Output
 A database named 'SizeBasedTS'
+
 A collection named 'IoTData'
 
 ### Sample Document Content
