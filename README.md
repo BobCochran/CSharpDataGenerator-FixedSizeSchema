@@ -80,6 +80,7 @@ A collection named 'IoTData'
 
 ### Document Dictionary
 
+
 | IoTData Document Dictionary                         |
 | Key | Value Explanation | Remarks                   |
 | --- | ----------------- | ------------------------- |
