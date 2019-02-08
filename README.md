@@ -81,7 +81,6 @@ A collection named 'IoTData'
 ### Document Dictionary
 
 
-| IoTData Document Dictionary |
 | Key | Value Explanation | Remarks |
 | --- | --- | --- |
 | _id | ObjectId | Standard MongoDB ObjectId |
