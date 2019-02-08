@@ -84,7 +84,7 @@ A collection named 'IoTData'
 | Key | Value Explanation | Remarks |
 | --- | --- | --- |
 | _id | ObjectId | Standard MongoDB ObjectId |
-
+| day | DateTime object in ISO8601 format | DateTime today = DateTime.Today.AddDays(1).AddDays(-1); |
 
 ### Sample Document Content
 
