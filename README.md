@@ -87,8 +87,10 @@ A collection named 'IoTData'
 | day | DateTime object in ISO8601 format | DateTime today = DateTime.Today.AddDays(1).AddDays(-1); |
 | deviceid | 32 bit integer | identical to gateway_num: Convert.ToInt32(gateway_num) | 
 | sensorid | 32 bit integer | (Convert.ToInt32(gateway_num) + 1) * 1000 + sn; |
-| first | 32 bit integer | Unix epoch time in seconds: {"$min", new BsonDocument{ {"first", Convert.ToDouble(t)} } } |
-| last | 32 bit integer | Unix epoch time in seconds: {"$max", new BsonDocument{ {"last", Convert.ToDouble(t)} } } |
+| first |  64 bit floating point | Unix epoch time in seconds: {"$min", new BsonDocument{ {"first", Convert.ToDouble(t)} } } |
+| last |  64 bit floating point | Unix epoch time in seconds: {"$max", new BsonDocument{ {"last", Convert.ToDouble(t)} } } |
+| nsamples | 32 bit integer | Created as part of the update filter: {"nsamples", new BsonDocument { { "$lt",200}}} |
+
 
 
 ### Sample Document Content
