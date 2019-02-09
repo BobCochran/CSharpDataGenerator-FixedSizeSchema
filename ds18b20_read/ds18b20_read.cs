@@ -2,7 +2,7 @@
 
 namespace ds18b20_read
 {
-    class Program
+    class ds18b20_read 
     {
         static void Main(string[] args)
         {
