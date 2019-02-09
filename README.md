@@ -88,6 +88,7 @@ A collection named 'IoTData'
 | deviceid | 32 bit integer | identical to gateway_num: Convert.ToInt32(gateway_num) | 
 | sensorid | 32 bit integer | (Convert.ToInt32(gateway_num) + 1) * 1000 + sn; |
 | first | 32 bit integer | Unix epoch time in seconds: {"$min", new BsonDocument{ {"first", Convert.ToDouble(t)} } } |
+| last | 32 bit integer | Unix epoch time in seconds: {"$max", new BsonDocument{ {"last", Convert.ToDouble(t)} } } |
 
 
 ### Sample Document Content
