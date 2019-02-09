@@ -85,6 +85,7 @@ A collection named 'IoTData'
 | --- | --- | --- |
 | _id | ObjectId | Standard MongoDB ObjectId |
 | day | DateTime object in ISO8601 format | DateTime today = DateTime.Today.AddDays(1).AddDays(-1); |
+| deviceid | 32 bit integer | identical to gateway_num: Convert.ToInt32(gateway_num) | 
 
 ### Sample Document Content
 
