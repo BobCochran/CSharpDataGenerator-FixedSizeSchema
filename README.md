@@ -84,7 +84,7 @@ A collection named 'IoTData'
 | Key | Value Explanation | Remarks |
 | --- | --- | --- |
 | _id | ObjectId | Standard MongoDB ObjectId |
-| day | DateTime object in ISO8601 format | DateTime today = DateTime.Today.AddDays(1).AddDays(-1); |
+| day | BSON date | DateTime today = DateTime.Today.AddDays(1).AddDays(-1); |
 | deviceid | 32 bit integer | identical to gateway_num: Convert.ToInt32(gateway_num) | 
 | sensorid | 32 bit integer | (Convert.ToInt32(gateway_num) + 1) * 1000 + sn; |
 | first | BSON double  | Unix epoch time in seconds: {"$min", new BsonDocument{ {"first", Convert.ToDouble(t)} } } |
@@ -94,6 +94,7 @@ A collection named 'IoTData'
 | samples.val | BSON double | Random double value between 32 and 75. |
 | samples.time | BSON double | Unix epoch time in seconds: { "time", Convert.ToDouble(t) } |
   
+
 
 To determine the BSON type of a document, use the aggregation $type operator; e.g. 
 
