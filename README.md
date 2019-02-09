@@ -91,7 +91,9 @@ A collection named 'IoTData'
 | last |  BSON double  | Unix epoch time in seconds: {"$max", new BsonDocument{ {"last", Convert.ToDouble(t)} } } |
 | nsamples | 32 bit integer | Created as part of the update filter: {"nsamples", new BsonDocument { { "$lt",200}}}. If upserting, this acts to limit the number of sample subdocuments in the samples array to < 201. The 201st sample causes a new document to be created. |
 | samples | array of subdocuments | subdocument composition is discussed below. |
-
+| samples.val | BSON double | Random double value between 32 and 75. |
+| samples.time | BSON double | Unix epoch time in seconds: { "time", Convert.ToDouble(t) } |
+  
 
 To determine the BSON type of a document, use the aggregation $type operator; e.g. 
 
