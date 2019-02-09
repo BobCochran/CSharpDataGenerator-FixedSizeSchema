@@ -2,4 +2,6 @@
 obj
 bin
 *.js
+ds18b20_read/obj
+ds18b20_read/bin
 
