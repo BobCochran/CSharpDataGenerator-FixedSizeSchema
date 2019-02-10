@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+
 /* The purpose of this program is to read a file containing temperature 
  * readings emitted by a Maxim DS18B20 waterproof temperature sensor. 
  * The structure of the input file is like this:
@@ -48,6 +50,30 @@ namespace ds18b20_read
 
           Console.WriteLine("\ndeviceid captured " + deviceid + " filename captured " + fn + "\n");
 
+          string[] lines;
+
+          // Read the input file
+
+          try {
+
+                 lines = System.IO.File.ReadAllLines(@fn);
+
+          } catch(IOException e) {
+
+            Console.WriteLine("\nA file read error occured ", e);
+            
+            return 2;
+         
+         }
+
+          //Print the input file
+
+          foreach (string s in lines) {
+
+            Console.WriteLine(s);
+
+          }
+              
           return 0;
  
         }
