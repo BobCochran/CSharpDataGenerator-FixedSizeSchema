@@ -73,6 +73,12 @@ namespace ds18b20_read
             Console.WriteLine(s);
 
             double dtval = IsNumeric(s);  //This should be the Unix epoch value
+ 
+            if (dtval > 0) {
+
+               Console.WriteLine("\nThe value of dtval is " + dtval);
+
+            }
 
           }
               
