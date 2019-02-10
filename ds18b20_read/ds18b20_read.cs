@@ -28,9 +28,28 @@ namespace ds18b20_read
 {
     class ds18b20_read 
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           //Do we have input arguments? We are expecting:
+           // string -- sensor deviceid
+           // string -- name of temperature file to be processed
+
+          if (args.Length == 0) {
+   
+            Console.WriteLine("Please enter device name and input filename to process.");
+            Console.WriteLine("Usage: <devicename> <input file name>");
+            return 1;
+         
+          }
+
+          string deviceid = args[0];
+     
+          string fn = args[1];
+
+          Console.WriteLine("\ndeviceid captured " + deviceid + " filename captured " + fn + "\n");
+
+          return 0;
+ 
         }
     }
 }
