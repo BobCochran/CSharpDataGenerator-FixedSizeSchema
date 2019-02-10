@@ -55,6 +55,8 @@ namespace ds18b20_read
 
           List<double> saved_dtval_list = new List<double>();
 
+          List<double> saved_temps_list = new List<double>();
+
           // Read the input file
 
           try {
@@ -69,8 +71,9 @@ namespace ds18b20_read
          
          }
 
-          //Print the input file. Attempt to capture the epoch date
-          // and temperature value.
+          // Print the input file. Attempt to capture the epoch date
+          // and temperature value. Epoch dates and temperatures 
+          // are saved to separate List<> collections.
 
           foreach (string s in lines) {
 
@@ -87,6 +90,8 @@ namespace ds18b20_read
                continue;
 
             }
+
+            double temp = FindTemperature(s);
 
           }
               
@@ -119,6 +124,28 @@ namespace ds18b20_read
           }
 
         }
+
+     /* This method splits the input string on an equals sign '=' 
+      * and checks to see if the string on the right of the equals
+      * sign is a number. If it is, this is the temperature value.
+      * We save that temperature value and throw out everything else.
+      */
+
+      public static double FindTemperature(string str) {
+
+          string[] t_array = str.Split('=');
+
+          double t_value = 0;
+          
+          foreach (var a in t_array) {
+
+             Console.WriteLine("This is one side of the split --> " + a);
+
+          }
+
+          return t_value;
+
+      }
  
     }
 }
