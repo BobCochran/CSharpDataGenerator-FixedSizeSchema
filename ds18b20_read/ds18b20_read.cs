@@ -66,16 +66,45 @@ namespace ds18b20_read
          
          }
 
-          //Print the input file
+          //Print the input file. Determine attempt to capture the epoch date.
 
           foreach (string s in lines) {
 
             Console.WriteLine(s);
+
+            double dtval = IsNumeric(s);  //This should be the Unix epoch value
 
           }
               
           return 0;
  
         }
+
+       /* This method checks to see if the line contains a numeric double value. 
+        * If so, this is the epoch date in seconds since January 1, 1970. 
+        * We want to capture this value.
+        */
+
+       public static double IsNumeric(string str) {
+
+           try {
+
+             str = str.Trim( );
+
+             double dtval = 0;
+
+             dtval = double.Parse(str);
+
+             return dtval;
+
+          } catch (FormatException) {
+
+             double dtval = 0;
+
+             return dtval;
+          }
+
+        }
+ 
     }
 }
