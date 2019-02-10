@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 /* The purpose of this program is to read a file containing temperature 
@@ -52,6 +53,8 @@ namespace ds18b20_read
 
           string[] lines;
 
+          List<double> saved_dtval_list = new List<double>();
+
           // Read the input file
 
           try {
@@ -66,7 +69,8 @@ namespace ds18b20_read
          
          }
 
-          //Print the input file. Determine attempt to capture the epoch date.
+          //Print the input file. Attempt to capture the epoch date
+          // and temperature value.
 
           foreach (string s in lines) {
 
@@ -77,6 +81,10 @@ namespace ds18b20_read
             if (dtval > 0) {
 
                Console.WriteLine("\nThe value of dtval is " + dtval);
+
+               saved_dtval_list.Add(dtval);
+
+               continue;
 
             }
 
