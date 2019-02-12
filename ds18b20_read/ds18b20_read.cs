@@ -79,6 +79,14 @@ namespace ds18b20_read
 
             Console.WriteLine(s);
 
+             // get rid of lines that are all white space
+
+             if (String.IsNullOrWhiteSpace(s)) {
+
+                continue;
+    
+             }
+
             double dtval = IsNumeric(s);  //This should be the Unix epoch value
  
             if (dtval > 0) {
@@ -92,6 +100,8 @@ namespace ds18b20_read
             }
 
             double temp = FindTemperature(s);
+
+            Console.WriteLine("The temperature is " + temp);
 
           }
               
@@ -140,6 +150,8 @@ namespace ds18b20_read
           foreach (var a in t_array) {
 
              Console.WriteLine("This is one side of the split --> " + a);
+
+             // Try parsing a double value
 
              if (Double.TryParse(a, out t_value)) {
                 Console.WriteLine("'{0}' --> {1}", a, t_value);
