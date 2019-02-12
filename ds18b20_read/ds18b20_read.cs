@@ -112,6 +112,8 @@ namespace ds18b20_read
 
             double temp = FindTemperature(s);
 
+            saved_temps_list.Add(temp);
+
             Console.WriteLine("The temperature is " + temp);
 
           }
