@@ -141,6 +141,11 @@ namespace ds18b20_read
 
              Console.WriteLine("This is one side of the split --> " + a);
 
+             if (Double.TryParse(a, out t_value)) {
+                Console.WriteLine("'{0}' --> {1}", a, t_value);
+                break;
+             }                                         // see if we get a true double.
+
           }
 
           return t_value;
