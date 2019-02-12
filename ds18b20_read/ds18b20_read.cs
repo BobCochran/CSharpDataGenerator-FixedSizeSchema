@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.IO;
 
 /* The purpose of this program is to read a file containing temperature 
@@ -57,6 +58,8 @@ namespace ds18b20_read
 
           List<double> saved_temps_list = new List<double>();
 
+          Regex r = new Regex("crc");
+
           // Read the input file
 
           try {
@@ -86,6 +89,14 @@ namespace ds18b20_read
                 continue;
     
              }
+
+            // get rid of the crc lines
+
+           if (r.IsMatch(s)) {
+
+              continue;
+
+           }
 
             double dtval = IsNumeric(s);  //This should be the Unix epoch value
  
