@@ -158,7 +158,17 @@ namespace ds18b20_read
 
           string[] t_array = str.Split('=');
 
+          double scaled_value = 0.0;
+
+          string specifier;
+
+          CultureInfo culture;
+
           double t_value = 0;
+
+          specifier = "G";
+
+          culture = CultureInfo.CreateSpecificCulture("en-US");
           
           foreach (var a in t_array) {
 
@@ -167,7 +177,9 @@ namespace ds18b20_read
              // Try parsing a double value
 
              if (Double.TryParse(a, out t_value)) {
+                scaled_value = t_value/1000;
                 Console.WriteLine("'{0}' --> {1}", a, t_value);
+                Console.WriteLine("The scaled value is --> " + scaled_value.toString(specifier, culture));
                 break;
              }                                         // see if we get a true double.
 
