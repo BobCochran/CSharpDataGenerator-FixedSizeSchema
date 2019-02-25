@@ -175,7 +175,13 @@ namespace ds18b20_read
 
              Console.WriteLine("This is one side of the split --> " + a);
 
-             // Try parsing a double value
+             // Try parsing a double value. Scale the value by dividing by 1000 to place the 
+             // Decimal point correctly. Return the scaled value. Why scale the temperature?
+             // Well it is given to us as a string in the format nnnnn from the sensor
+             // by default. The temperature reading could be 15125 as reported by the sensor.
+             // The temperature reading is meant to be 15.125 degrees Centigrade, so we need
+             // to convert the string to a double and then divide it by 1000 to set the decimal
+             // point. 
 
              if (Double.TryParse(a, out t_value)) {
                 scaled_value = t_value/1000;
@@ -186,7 +192,7 @@ namespace ds18b20_read
 
           }
 
-          return t_value;
+          return scaled_value;
 
       }
  
