@@ -126,6 +126,10 @@ MongoDB Enterprise > db.IoTData.findOne()
 		},
 [198 additional entries will appear in the "samples" array".]
 ```
+## Model Temperature Collection Application
+
+A model temperature collection application is provided in the ds18b20_read folder. The application is written in C# using Microsoft .NET Core 2.2.
+ 
 ## References
 
 1. [Time Series Data and MongoDB: Part 2 -- Schema Design Best Practices](https://www.mongodb.com/blog/post/time-series-data-and-mongodb-part-2-schema-design-best-practices), by Robert Walters.
