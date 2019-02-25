@@ -167,7 +167,7 @@ namespace ds18b20_read
 
           double t_value = 0;
 
-          specifier = "G";
+          specifier = "F3";
 
           culture = CultureInfo.CreateSpecificCulture("en-US");
           
