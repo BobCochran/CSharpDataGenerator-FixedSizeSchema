@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Globalization;
 using System.IO;
 
 /* The purpose of this program is to read a file containing temperature 
@@ -179,7 +180,7 @@ namespace ds18b20_read
              if (Double.TryParse(a, out t_value)) {
                 scaled_value = t_value/1000;
                 Console.WriteLine("'{0}' --> {1}", a, t_value);
-                Console.WriteLine("The scaled value is --> " + scaled_value.toString(specifier, culture));
+                Console.WriteLine("The scaled value is --> " + scaled_value.ToString(specifier, culture));
                 break;
              }                                         // see if we get a true double.
 
