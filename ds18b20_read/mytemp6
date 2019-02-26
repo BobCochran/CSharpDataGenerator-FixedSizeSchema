@@ -22,3 +22,39 @@ f2 00 4b 46 7f ff 0e 10 f8 t=15125
 1551054001
 f0 00 4b 46 7f ff 10 10 4e : crc=4e YES
 f0 00 4b 46 7f ff 10 10 4e t=15000
+1551055201
+ee 00 4b 46 7f ff 02 10 de : crc=de YES
+ee 00 4b 46 7f ff 02 10 de t=14875
+1551056401
+eb 00 4b 46 7f ff 05 10 e6 : crc=e6 YES
+eb 00 4b 46 7f ff 05 10 e6 t=14687
+1551057601
+e9 00 4b 46 7f ff 07 10 f1 : crc=f1 YES
+e9 00 4b 46 7f ff 07 10 f1 t=14562
+1551058801
+e6 00 4b 46 7f ff 0a 10 82 : crc=82 YES
+e6 00 4b 46 7f ff 0a 10 82 t=14375
+1551060001
+e5 00 4b 46 7f ff 0b 10 83 : crc=83 YES
+e5 00 4b 46 7f ff 0b 10 83 t=14312
+1551061201
+e3 00 4b 46 7f ff 0d 10 ba : crc=ba YES
+e3 00 4b 46 7f ff 0d 10 ba t=14187
+1551062401
+e2 00 4b 46 7f ff 0e 10 ac : crc=ac YES
+e2 00 4b 46 7f ff 0e 10 ac t=14125
+1551134401
+0c 01 4b 46 7f ff 04 10 bc : crc=bc YES
+0c 01 4b 46 7f ff 04 10 bc t=16750
+1551135601
+0a 01 4b 46 7f ff 06 10 be : crc=be YES
+0a 01 4b 46 7f ff 06 10 be t=16625
+1551136801
+08 01 4b 46 7f ff 08 10 e4 : crc=e4 YES
+08 01 4b 46 7f ff 08 10 e4 t=16500
+1551138002
+07 01 4b 46 7f ff 09 10 da : crc=da YES
+07 01 4b 46 7f ff 09 10 da t=16437
+1551139201
+04 01 4b 46 7f ff 0c 10 e0 : crc=e0 YES
+04 01 4b 46 7f ff 0c 10 e0 t=16250
