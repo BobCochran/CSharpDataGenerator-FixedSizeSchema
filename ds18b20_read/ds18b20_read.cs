@@ -40,11 +40,25 @@ namespace ds18b20_read
            //Do we have input arguments? We are expecting:
            // string -- sensor deviceid
            // string -- name of temperature file to be processed
+           // string -- MongoDB database name to connect to
+           // string -- MongoDB collection name to update
 
           if (args.Length == 0) {
    
-            Console.WriteLine("Please enter device name and input filename to process.");
-            Console.WriteLine("Usage: <devicename> <input file name>");
+            Console.WriteLine("Please enter device name, input filename, database name, and collection name to process.");
+            Console.WriteLine("Usage: <devicename> <input file name> <database name> <database collection name>");
+            Console.WriteLine("Please note that this program is expecting\nto connect to a MongoDB version 4.x.y database"); 
+            Console.WriteLine("You must have a running MongoDB database instance."); 
+            return 1;
+         
+          }
+
+          if (args.Length < 4) {
+   
+            Console.WriteLine("Please enter device name, input filename, database name, and collection name to process.");
+            Console.WriteLine("Usage: <devicename> <input file name> <database name> <database collection name>");
+            Console.WriteLine("Please note that this program is expecting\nto connect to a MongoDB version 4.x.y database"); 
+            Console.WriteLine("You must have a running MongoDB database instance."); 
             return 1;
          
           }
@@ -53,7 +67,17 @@ namespace ds18b20_read
      
           string fn = args[1];
 
+          /* Instead of hardcoding the MongoDB database and collection name in the code,
+           * get it from the command line. 
+           */
+
+          string dbn = args[2];
+
+          string colln = args[3];
+
           Console.WriteLine("\ndeviceid captured " + deviceid + " filename captured " + fn + "\n");
+
+          Console.WriteLine("Database " + dbn + " database collection " + colln + "\n");
 
           string[] lines;
 
